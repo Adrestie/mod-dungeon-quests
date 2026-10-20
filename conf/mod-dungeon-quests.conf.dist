@@ -1,0 +1,48 @@
+#
+# mod-dungeon-quests configuration
+#
+
+[worldserver]
+
+########################################
+# Dungeon quest givers
+########################################
+#
+#    DungeonQuests.Enable
+#        Description: The quest giver at the entrance and at the end of every
+#                     dungeon gives and takes back the quests of its dungeon.
+#        Default:     1 - Enabled
+#                     0 - Disabled: the quest givers have nothing to say
+#
+
+DungeonQuests.Enable = 1
+
+#
+#    DungeonQuests.RespectClass
+#        Description: Quests of one class are given to that class only. The
+#                     race, the faction and the previous quests of the chain
+#                     are always ignored.
+#        Default:     1 - Enabled
+#                     0 - Disabled: every class may take them
+#
+
+DungeonQuests.RespectClass = 1
+
+#
+#    DungeonQuests.RespectLevel
+#        Description: A quest is given from its minimum level only.
+#        Default:     1 - Enabled
+#                     0 - Disabled: every level may take it
+#
+
+DungeonQuests.RespectLevel = 1
+
+#
+#    DungeonQuests.PageSize
+#        Description: How many quests the list shows at once; buttons turn
+#                     the pages. The 3.3.5 client shows 32 at most.
+#        Range:       1 to 32
+#        Default:     30
+#
+
+DungeonQuests.PageSize = 30

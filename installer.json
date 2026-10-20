@@ -1,0 +1,66 @@
+{
+  "format": "wow-mods-installer/1",
+  "module": "mod-dungeon-quests",
+  "title": "Dungeon Quests",
+  "fields": {
+    "worldserver": "required",
+    "sources": "required",
+    "mysql": "required"
+  },
+  "signature": [
+    "src/dungeon_quests_loader.cpp",
+    "src/DungeonQuests.cpp"
+  ],
+  "configuration": {
+    "file": "mod-dungeon-quests.conf",
+    "template": "conf/mod-dungeon-quests.conf.dist"
+  },
+  "exclude_from_sources": [
+    "tools"
+  ],
+  "database": {
+    "world": {
+      "tables": [
+        "mod_dungeon_quests"
+      ],
+      "rows": [
+        {
+          "table": "creature",
+          "where": "guid BETWEEN 9400000 AND 9499999"
+        },
+        {
+          "table": "creature_template",
+          "where": "entry = 94000"
+        },
+        {
+          "table": "creature_template_model",
+          "where": "CreatureID = 94000"
+        },
+        {
+          "table": "creature_template_locale",
+          "where": "entry = 94000"
+        },
+        {
+          "table": "npc_text",
+          "where": "ID IN (94000, 94001)"
+        },
+        {
+          "table": "npc_text_locale",
+          "where": "ID IN (94000, 94001)"
+        },
+        {
+          "table": "module_string",
+          "where": "module = 'mod-dungeon-quests'"
+        },
+        {
+          "table": "module_string_locale",
+          "where": "module = 'mod-dungeon-quests'"
+        },
+        {
+          "table": "updates",
+          "where": "name IN ({sql_files:world})"
+        }
+      ]
+    }
+  }
+}
