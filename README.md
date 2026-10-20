@@ -123,7 +123,7 @@ cœur.
 ## Identifiants
 
 Tranche 94 du [registre WoW-mods](https://github.com/Adrestie/WoW-mods/blob/main/ID_RANGES.md) :
-créature 94000, textes de PNJ 94000-94001, apparitions 9400000-9499999.
+créature 94000, textes de PNJ 94000-94001, apparitions 9400000-9409999.
 
 ## Licence
 

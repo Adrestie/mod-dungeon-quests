@@ -12,9 +12,9 @@
 -- The quest giver settles on the ground when it appears (the module), so a
 -- spot a little above the floor is harmless.
 --
--- Guids 9400000-9499999: tranche 94 of the WoW-mods registry. Idempotent.
+-- Guids 9400000-9409999: tranche 94 of the WoW-mods registry. Idempotent.
 
-DELETE FROM `creature` WHERE `guid` BETWEEN 9400000 AND 9499999;
+DELETE FROM `creature` WHERE `guid` BETWEEN 9400000 AND 9409999;
 INSERT INTO `creature` (`guid`, `id`, `map`, `zoneId`, `areaId`, `spawnMask`, `phaseMask`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `wander_distance`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`, `ScriptName`, `VerifiedBuild`, `CreateObject`, `Comment`) VALUES
 (9400000, 94000, 33, 0, 0, 1, 1, 0, -219.857, 2140.030, 80.905, 4.5020, 300, 0, 0, 1, 0, 0, 0, 0, 0, '', NULL, 0, 'Entrance: Shadowfang Keep'),
 (9400001, 94000, 33, 0, 0, 1, 1, 0, -79.792, 2148.394, 155.800, 2.5000, 300, 0, 0, 1, 0, 0, 0, 0, 0, '', NULL, 0, 'End: Shadowfang Keep: Archmage Arugal'),

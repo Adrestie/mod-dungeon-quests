@@ -26,7 +26,7 @@
       "rows": [
         {
           "table": "creature",
-          "where": "guid BETWEEN 9400000 AND 9499999"
+          "where": "guid BETWEEN 9400000 AND 9409999"
         },
         {
           "table": "creature_template",
