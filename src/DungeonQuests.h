@@ -45,12 +45,12 @@ class WorldPacket;
 
 constexpr char const* DUNGEON_QUESTS_MODULE = "mod-dungeon-quests";
 
-// Tranche 94 of the WoW-mods registry.
+// Block 94600-94699 of the WoW-mods registry.
 enum DungeonQuestsIds : uint32
 {
-    DUNGEON_QUESTS_NPC          = 94000,  // the quest giver, every dungeon
-    DUNGEON_QUESTS_TEXT_HELLO   = 94000,  // npc_text: quests to give or take back
-    DUNGEON_QUESTS_TEXT_NOTHING = 94001,  // npc_text: nothing for this player
+    DUNGEON_QUESTS_NPC          = 94600,  // the quest giver, every dungeon
+    DUNGEON_QUESTS_TEXT_HELLO   = 94600,  // npc_text: quests to give or take back
+    DUNGEON_QUESTS_TEXT_NOTHING = 94601,  // npc_text: nothing for this player
 };
 
 // module_string ids

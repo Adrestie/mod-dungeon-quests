@@ -26,27 +26,27 @@
       "rows": [
         {
           "table": "creature",
-          "where": "guid BETWEEN 9400000 AND 9409999"
+          "where": "guid BETWEEN 9460000 AND 9469999"
         },
         {
           "table": "creature_template",
-          "where": "entry = 94000"
+          "where": "entry = 94600"
         },
         {
           "table": "creature_template_model",
-          "where": "CreatureID = 94000"
+          "where": "CreatureID = 94600"
         },
         {
           "table": "creature_template_locale",
-          "where": "entry = 94000"
+          "where": "entry = 94600"
         },
         {
           "table": "npc_text",
-          "where": "ID IN (94000, 94001)"
+          "where": "ID IN (94600, 94601)"
         },
         {
           "table": "npc_text_locale",
-          "where": "ID IN (94000, 94001)"
+          "where": "ID IN (94600, 94601)"
         },
         {
           "table": "module_string",

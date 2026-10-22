@@ -44,7 +44,7 @@ available. This is intended.
 
 The `mod_dungeon_quests` table (world database: `map`, `quest`, `comment`)
 lists the quests of each dungeon. The map the Emissary stands on picks its
-list, so one creature (entry 94000) serves every dungeon.
+list, so one creature (entry 94600) serves every dungeon.
 
 The table is written by `tools/generate_quest_list.py` from the world
 database and the server's DBC files. A quest belongs to a dungeon when:
@@ -75,7 +75,7 @@ python tools/generate_quest_list.py --dbc "<server Data>\dbc" --database acore_w
 ## Where the Emissaries stand
 
 117 Emissaries, in `data/sql/world/dungeon_quests_03_spawns.sql` (guids
-9400000-9400116):
+9460000-9460116):
 
 - **at the entrance**, by the players' arrival point: one per wing for
   Scarlet Monastery, Dire Maul, Maraudon and Stratholme, and one at each of
@@ -127,8 +127,8 @@ The core is not changed.
 
 ## Identifiers
 
-Block 94000-94099 of the [WoW-mods registry](https://github.com/Adrestie/WoW-mods/blob/main/ID_RANGES.md):
-creature 94000, NPC texts 94000-94001, spawns 9400000-9409999.
+Block 94600-94699 of the [WoW-mods registry](https://github.com/Adrestie/WoW-mods/blob/main/ID_RANGES.md):
+creature 94600, NPC texts 94600-94601, spawns 9460000-9469999.
 
 ## Licence
 
